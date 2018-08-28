@@ -3,6 +3,8 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { NativeScriptHttpModule } from "nativescript-angular/http";
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from "./app.routing";
+import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angular";
+
 import { AppComponent } from "./app.component";
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
@@ -27,7 +29,8 @@ import { baseURL } from './shared/baseurl';
         NativeScriptModule,
         NativeScriptHttpModule,
         AppRoutingModule,
-        HttpClientModule
+        HttpClientModule,
+        NativeScriptUISideDrawerModule
     ],
     declarations: [
         AppComponent,
