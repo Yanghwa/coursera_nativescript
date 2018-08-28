@@ -8,8 +8,11 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
 import { AppComponent } from "./app.component";
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
+import { HomeComponent } from './home/home.component';
 
 import { DishService } from './services/dish.service';
+import { PromotionService } from './services/promotion.service';
+import { LeaderService } from './services/leader.service';
 import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
 
 import { baseURL } from './shared/baseurl';
@@ -35,11 +38,14 @@ import { baseURL } from './shared/baseurl';
     declarations: [
         AppComponent,
         MenuComponent,
-        DishdetailComponent
+        DishdetailComponent,
+        HomeComponent
     ],
     providers: [
         {provide: 'baseURL', useValue: baseURL},
         DishService,
+        PromotionService,
+        LeaderService,
         ProcessHTTPMsgService
     ],
     schemas: [
