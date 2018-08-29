@@ -3,6 +3,7 @@ import { NavigationEnd, Router } from "@angular/router";
 import * as app from "application";
 import { RouterExtensions } from "nativescript-angular/router";
 import { DrawerTransitionBase, RadSideDrawer, SlideInOnTopTransition, SideDrawerLocation } from "nativescript-ui-sidedrawer";
+import { TNSFontIconService } from 'nativescript-ngx-fonticon';
 import { filter } from "rxjs/operators";
 
 @Component({
@@ -14,7 +15,7 @@ export class AppComponent implements OnInit {
     private _activatedUrl: string;
     private _sideDrawerTransition: DrawerTransitionBase;
 
-    constructor(private router: Router, private routerExtensions: RouterExtensions) {
+    constructor(private router: Router, private routerExtensions: RouterExtensions, private fonticon: TNSFontIconService) {
 
     }
 
