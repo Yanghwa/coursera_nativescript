@@ -31,6 +31,10 @@
                     <Label col="0" [text]="'fa-cutlery' | fonticon" class="sidedrawer-list-item-text fa"></Label>
                     <Label col="1" text="Reserve Table" class="sidedrawer-list-item-text"></Label>
                 </GridLayout>
+                <GridLayout columns="*, auto" class="sidedrawer-list-item" (tap)="displayLoginDialog()">
+                    <Label col="0" [text]="'fa-sign-in' | fonticon" class="sidedrawer-list-item-text fa"></Label>
+                    <Label col="1" text="Login" class="sidedrawer-list-item-text"></Label>
+                </GridLayout>
             </StackLayout>
         </ScrollView>
     </GridLayout>
