@@ -35,6 +35,8 @@
                     <Label col="0" [text]="'fa-sign-in' | fonticon" class="sidedrawer-list-item-text fa"></Label>
                     <Label col="1" text="Login" class="sidedrawer-list-item-text"></Label>
                 </GridLayout>
+                <GridLayout columns="*, auto" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/auth')" (tap)="onNavItemTap('/auth')">
+                </GridLayout>
             </StackLayout>
         </ScrollView>
     </GridLayout>
