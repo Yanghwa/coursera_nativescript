@@ -27,6 +27,7 @@ import { LeaderService } from './services/leader.service';
 import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
 import { FavoriteService } from './services/favorite.service';
 import { CouchbaseService } from './services/couchbase.service';
+import { PlatformService } from './services/platform.service';
 
 import { baseURL } from './shared/baseurl';
 
@@ -75,7 +76,8 @@ import { baseURL } from './shared/baseurl';
         LeaderService,
         ProcessHTTPMsgService,
         FavoriteService,
-        CouchbaseService
+        CouchbaseService,
+        PlatformService
     ],
     schemas: [
         NO_ERRORS_SCHEMA
