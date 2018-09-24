@@ -3,6 +3,7 @@ import * as app from "application";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import { TNSFontIconService } from 'nativescript-ngx-fonticon';
 import * as Email from 'nativescript-email';
+import * as TNSPhone from 'nativescript-phone';
 
 @Component({
     selector: 'app-contact',
@@ -37,4 +38,9 @@ export class ContactComponent {
           })
     
       }
+
+      callRestaurant() {
+        /// Dial a phone number.
+        TNSPhone.dial('85212345678', false);
+    }
 }
